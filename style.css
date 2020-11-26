@@ -14,6 +14,17 @@ font-size: 30px;
   padding: 24px;
   margin: 16px auto;
   text-align: center;
+
+  color: #000;
+		font-size: 2rem;
+		animation: blinkingText 2s infinite;
+	}
+	@keyframes blinkingText{
+		0%		{ color: #10c018;}
+		25%		{ color: #1056c0;}
+		50%		{ color: #ef0a1a;}
+		75%		{ color: #254878;}
+		100%	{ color: #04a1d5;}
 }
 
 #busta {
@@ -30,3 +41,16 @@ font-size: 30px;
   text-align: center;
   font-family: 'Nerko One', cursive;
 }
+
+	.blink-bg{
+		padding: 10px;
+		display: inline-block;
+		animation: blinkingBackground 2s infinite;
+	}
+	@keyframes blinkingBackground{
+		0%		{ background-color: #10c018;}
+		25%		{ background-color: #1056c0;}
+		50%		{ background-color: #ef0a1a;}
+		75%		{ background-color: #254878;}
+		100%	        { background-color: #04a1d5;}
+	}
